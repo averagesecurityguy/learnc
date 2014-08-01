@@ -1,10 +1,8 @@
 CC=gcc
 CFLAGS=-Wall -g
-
+FILE=ex1
 all:
-	$(CC) $(CFLAGS) ex1.c -o ex1
-	$(CC) $(CFLAGS) ex3.c -o ex3
+	$(CC) $(CFLAGS) $(FILE).c -o $(FILE)
 
 clean:
-	rm -f ex1
-	rm -f ex3
+	rm -f $(FILE)
